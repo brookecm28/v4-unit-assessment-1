@@ -1,0 +1,151 @@
+* {
+    margin: 0px auto;
+}
+
+header {
+    margin-top: 5px;
+    background-color: aquamarine;
+    border-top: solid 2pt black;
+    height: 100px;
+    width: 98vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.words {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.shapes {
+    width: 98vw;
+    border: dashed 1pt black;
+    margin-top: 5px;
+    padding: 0px;
+
+}
+.first{
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#purple {
+    background-color: indigo;
+    height: 90px;
+    width: 200px;
+    border: solid 2.5pt red;
+}
+
+#blue {
+    background-color: blue;
+    height: 92px;
+    width: 92px;
+    border: solid 1pt black;
+    box-shadow: 6px 6px 8px black;
+}
+
+#pink {
+    background-color: palevioletred;
+    height: 200px;
+    width: 200px;
+    border: solid 1pt black;
+    margin-top: 20px;
+}
+
+#top {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: solid 1pt black;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+#mid {
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 1pt black;
+    margin-left: 22.5px;
+}
+
+#bot {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    border: solid 1pt black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+    
+
+.coal {
+    height:14px;
+    margin: 0 auto;
+}
+
+.top {
+    display: block;
+}
+.face{
+    display: inline-block;
+    margin-top: 20px;
+    
+}
+#carrot {
+    height: 15px;
+}
+
+.mid {
+    display: block;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+
+#fish {
+    height: 50px;
+    float: center;
+}
+
+#cream {
+    background-color: beige;
+    border: solid 1pt black
+    height: 400px;
+    width: 400px;
+    margin-left: 10px;
+}
+
+#green {
+    background-color:  forestgreen;
+    border: solid 1pt black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#rust {
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+    margin-left: 40px;
+}
+
+#fishWords {
+    color: white;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+#tank {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
