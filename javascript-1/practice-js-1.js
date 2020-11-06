@@ -3,15 +3,21 @@
 
 //CODE HERE 
 
+let myName = "Brooke"
+
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 //CODE HERE
 
+let faveNum = 21
+
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
 //CODE HERE
+
+let lovesCode = true
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -20,6 +26,10 @@
 */
 
 //CODE HERE
+
+function sum(num1, num2) {
+  return num1 + num2
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -31,6 +41,14 @@
 
 //CODE HERE
 
+function trueOrFalse(data) {
+  if (!data) {
+    return false
+  } else {
+    return true
+  }
+}
+
 //////////////////PROBLEM 6////////////////////
 /*
   Create a function called 'oddChecker' that takes in one parameter, 'num'. 
@@ -41,15 +59,27 @@
 
 //CODE HERE
 
+function oddChecker(num) {
+  if (num % 2 === 0) {
+    return "the number is even"
+  } else {
+    return "the number is odd"
+  }
+}
+
 //////////////////PROBLEM 7////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
   Have the function take the two parameters and return a string that says 
-  "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
+  "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. 
+  e.g. "Joseph loves music"
 */
 
 //CODE HERE
 
+function iLove(name, love) {
+  return name + " loves " + love
+}
 
 //////////////////PROBLEM 8////////////////////
 /* Create a copy of the faveColors array called 'colorCopy' using the slice method. */
@@ -58,10 +88,14 @@ const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
 
+let colorCopy = faveColors.slice()
+
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
+
+colorCopy.push("teal")
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -72,6 +106,8 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
+
+const middleNums = numbers.splice(1, 3)
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -89,6 +125,15 @@ const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
 
+let me = {
+  firstName: "Brooke",
+  state: "Colorado",
+  age: 25,
+  greeter: function() {
+    return "Hello! My name is " + me.firstname + " and I live in " + me. state 
+  }
+}
+
 //////////////////PROBLEM 12////////////////////
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr', 
@@ -104,6 +149,19 @@ const numbers = [1, 2, 3, 4, 5]
 
 // CODE HERE
 
+function bigOrSmall(arr) {
+  let answers = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push("big")
+    } else {
+      answers.push("small")
+    }
+  }
+  return answers
+}
+
+
 //////////////////PROBLEM 13////////////////////
 /* 
   Create a function called 'arrayReverser' that takes in one parameter, 'arr'. 
@@ -115,6 +173,14 @@ const numbers = [1, 2, 3, 4, 5]
 */
 
 //CODE HERE
+
+function arrayReverser(arr) {
+  let reversed = []
+  for (i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i])
+  }
+  return reversed
+}
 
 //////////////////PROBLEM 14////////////////////
 
@@ -140,16 +206,16 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
-let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
+let firstFunctionScope = ['global', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the innerFunction function.
-let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
+let innerFunctionScope = ['global', 'inner', 'outer']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -159,6 +225,10 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+
+function firstItem(arr, callback) {
+  callback(arr[0])
+}
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -170,25 +240,44 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 
 //CODE HERE
 
+function isItBob (obj, callback) {
+  if (obj.name === "Bob") {
+    callback(true)
+  } else {
+    callback(false)
+  }
+}
+
 //////////////////PROBLEM 17////////////////////
 /*
-  Write a function called giveMeDoubles that takes in two arguments: an array of numbers and a callback.  
+  Write a function called giveMeDoubles that takes in two arguments: an array of numbers
+  and a callback.  
   Use a for loop to double all numbers in the array.
   Then invoke the callback, passing in the doubled array.
 */
 
 //CODE HERE
 
+function giveMeDoubles(arr, callback) {
+  let doubled = []
+  for (let i = 0; i < arr.length; i++) {
+    doubled.push(arr[i] * 2)
+  }
+  callback(doubled)
+}
+
 //////////////////PROBLEM 18////////////////////
 /*
-  Write a function called carFactory that takes in three parameters: a make, model, and year.  
+  Write a function called carFactory that takes in three parameters: 
+  a make, model, and year.  
   When the function is invoked:
     - a string will be sent in for make
     - a string will be sent in for model
     - a number will be sent in for year
   Inside the function, create an object from those parameters.
   Next, write an if statement that will check if the year sent in is greater than 2018.
-    - if the year is greater than 2018, add a key to the object called isNew and set it to true
+    - if the year is greater than 2018, add a key to the object called isNew and 
+      set it to true
     - else, add a key to the object called isNew and set it to false
       - hint: you can use dot notation or bracket notation
   Last, the function should return the object
@@ -205,3 +294,17 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
 */
 
 //CODE HERE
+
+function carFactory(make, model, year) {
+  let car = {
+    carMake: make,
+    carModel: model,
+    carYear: year
+  }
+  if (year > 2018) {
+    car.isNew = true
+  } else {
+    car.isNew = false
+  }
+  return car
+}
