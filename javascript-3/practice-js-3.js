@@ -53,6 +53,11 @@ function addItem(item) {
 
 //CODE HERE
 
+// function removeItem(index) {
+//     groceries.splice(index, 1)
+//     displayData(groceries)
+// }
+
 function removeItem(index) {
     groceries.splice(index, 1)
     displayData(groceries)
