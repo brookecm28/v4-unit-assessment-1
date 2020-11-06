@@ -297,9 +297,9 @@ function giveMeDoubles(arr, callback) {
 
 function carFactory(make, model, year) {
   let car = {
-    carMake: make,
-    carModel: model,
-    carYear: year
+    make: make,
+    model: model,
+    year: year
   }
   if (year > 2018) {
     car.isNew = true
