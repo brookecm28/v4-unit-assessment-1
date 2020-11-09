@@ -3,23 +3,30 @@
 }
 
 header {
+    /* display: table-cell; */
     margin-top: 5px;
+    margin-left: 1vw;
     background-color: aquamarine;
     border-top: solid 2pt black;
     height: 100px;
     width: 98vw;
+    text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* vertical-align: middle; */
+    line-height: 90px;
+    text-indent: 30px;
 }
 
 .words {
     margin-top: 30px;
     margin-bottom: 0px;
     padding: 0px;
+    width: 94vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .shapes {
-    width: 98vw;
+    width: 94vw;
     border: dashed 1pt black;
     margin-top: 5px;
     padding: 0px;
@@ -84,6 +91,7 @@ header {
 .coal {
     height:14px;
     margin: 0 auto;
+    display: block;
 }
 
 .top {
@@ -91,10 +99,17 @@ header {
 }
 .face{
     display: inline-block;
-    margin-top: 20px;
-    
+    padding-top: 20%;
+    height: 14px; 
 }
+
+#leftCoal {
+    padding-left: 10px;
+}
+
 #carrot {
+    display: block;
+    padding-top: 10%;
     height: 15px;
 }
 
@@ -103,49 +118,64 @@ header {
 }
 
 .button {
-    margin-top: 20px;
+    /* display: block; */
+    /* margin: 0 auto; */
+    padding-bottom: 10px;
 }
 
-
-#fish {
-    height: 50px;
-    float: center;
+#topCoal {
+    display: block;
+    padding-top: 14%;
 }
 
 #cream {
     background-color: beige;
-    border: solid 1pt black
-    height: 400px;
-    width: 400px;
+    border: solid 1pt black;
+    height: 300px;
+    width: 300px;
     margin-left: 10px;
 }
 
 #green {
     background-color:  forestgreen;
     border: solid 1pt black;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 #rust {
+    margin-top: 50px;
     background-color: brown;
-    height: 200px;
-    width: 200px;
-    margin-left: 40px;
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box;
+    margin-left: 50px;
 }
 
 #fishWords {
     color: white;
     margin: 0 auto;
-    margin-top: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 35%;
+    line-height: 110px;
+    
 }
 
 #tank {
     background-color: blue;
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 0px;
+   
 }
+
+#fish {
+    display: block;
+    height: 50px;
+    clear: none;
+    padding-top: 28%;
+}
+

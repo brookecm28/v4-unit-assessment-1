@@ -55,6 +55,12 @@ h1 {
     margin: 30px 20px;
     }
 
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px 20px;
+    font-size: 18pt;
+}
+
 p {
     font-size: 12.5pt;
     margin-left: 20px;
